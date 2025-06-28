@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qusai Alasaad | Computer Engineer</title>
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         /* Custom CSS for scroll-reveal animations */
@@ -21,11 +19,20 @@
             transform: translateY(0px);
             opacity: 1;
         }
+
+        /* Custom background image for the body */
+        body {
+            background-image: url('https://placehold.co/1920x1080/0f172a/2dd4bf?text=Background'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-attachment: fixed; /* Makes the background image fixed while scrolling */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-color: rgba(17, 24, 39, 0.9); /* Fallback background color with transparency */
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans leading-relaxed">
 
-    <!-- Header & Navigation Bar -->
     <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-teal-400 hover:text-teal-300 transition-colors">Qusai Alasaad</a>
@@ -35,16 +42,13 @@
                 <a href="#skills" class="hover:text-teal-400 transition-colors">Skills</a>
                 <a href="#contact" class="hover:text-teal-400 transition-colors">Contact</a>
             </nav>
-            <!-- A placeholder for a potential mobile menu icon -->
             <div class="md:hidden">
             </div>
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main class="container mx-auto px-6">
 
-        <!-- Hero Section: Introduction -->
         <section id="hero" class="min-h-screen flex flex-col justify-center items-start pt-20">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
                 Qusai Mohammad Alasaad
@@ -60,7 +64,6 @@
             </a>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="py-20 reveal">
             <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
             <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg p-8 shadow-xl">
@@ -70,12 +73,10 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="py-20 reveal">
             <h2 class="text-3xl font-bold mb-12 text-center">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Project Card 1 -->
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <img src="https://placehold.co/600x400/1a202c/9ca3af?text=Shopping+List+App" alt="Shopping List App" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -85,7 +86,6 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <img src="https://placehold.co/600x400/1a202c/9ca3af?text=Expense+Tracker" alt="Expense Tracker" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -95,12 +95,11 @@
                     </div>
                 </div>
 
-                <!-- Project Card 3 -->
                 <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <img src="https://placehold.co/600x400/1a202c/9ca3af?text=Meals+App" alt="Meals App" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Meals App</h3>
-                        <p class="text-gray-400 mb-4">An application for browsing meal recipes, potentially including features for planning and discovery.</p>
+                        <p class="text-gray-400 mb-4">An application for Browse meal recipes, potentially including features for planning and discovery.</p>
                         <a href="https://github.com/QusaiAlasaad/Meals" target="_blank" class="text-teal-400 font-semibold hover:underline">View on GitHub &rarr;</a>
                     </div>
                 </div>
@@ -108,11 +107,9 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="py-20 reveal">
             <h2 class="text-3xl font-bold mb-12 text-center">Skills</h2>
             <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-center gap-12">
-                <!-- Technical Skills Column -->
                 <div class="w-full md:w-1/2">
                     <h3 class="text-2xl font-semibold mb-4 text-center text-teal-400">Technical Skills</h3>
                     <div class="flex flex-wrap justify-center gap-3">
@@ -123,7 +120,6 @@
                         <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">Python</span>
                     </div>
                 </div>
-                <!-- Professional Skills Column -->
                 <div class="w-full md:w-1/2">
                     <h3 class="text-2xl font-semibold mb-4 text-center text-teal-400">Professional Skills</h3>
                     <div class="flex flex-wrap justify-center gap-3">
@@ -137,7 +133,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="py-20 reveal">
             <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
             <div class="max-w-lg mx-auto text-center">
@@ -163,14 +158,12 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 mt-20">
         <div class="container mx-auto px-6 py-4 text-center text-gray-400">
             &copy; 2025 Qusai Mohammad Alasaad. All rights reserved.
         </div>
     </footer>
 
-    <!-- JavaScript for page interactions -->
     <script>
         // JavaScript for smooth scrolling when clicking navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
