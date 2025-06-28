@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qusai Alasaad | Computer Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom CSS for scroll-reveal animations */
+        .reveal {
+            position: relative;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 1s ease;
+        }
+
+        .reveal.active {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+
+        /* Custom background image for the body */
+        body {
+            background-image: url('https://placehold.co/1920x1080/0f172a/2dd4bf?text=Background'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-attachment: fixed; /* Makes the background image fixed while scrolling */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-color: rgba(17, 24, 39, 0.9); /* Fallback background color with transparency */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans leading-relaxed">
+
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-teal-400 hover:text-teal-300 transition-colors">Qusai Alasaad</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-teal-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-teal-400 transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors">Contact</a>
+            </nav>
+            <div class="md:hidden">
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <section id="hero" class="min-h-screen flex flex-col justify-center items-start pt-20">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                Qusai Mohammad Alasaad
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-teal-400 mt-2 mb-6">
+                Computer Engineer
+            </h2>
+            <p class="max-w-2xl text-gray-300">
+                Motivated and ambitious Computer Engineering graduate, eager to apply academic knowledge in a practical setting. Seeking an entry-level position to enhance technical and professional skills. Ready to contribute and grow within a dynamic team environment.
+            </p>
+            <a href="#contact" class="mt-8 bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                Get In Touch
+            </a>
+        </section>
+
+        <section id="about" class="py-20 reveal">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+            <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg p-8 shadow-xl">
+                <p class="text-lg text-gray-300">
+                    As a recent Computer Engineering graduate from Amman, Jordan, I am passionate about building robust and efficient software solutions. My academic journey has provided me with a strong foundation in programming languages like C++, C#, Java, and Python, alongside essential database skills in SQL. I thrive on solving complex problems and am committed to writing clean, maintainable code. I am actively looking for an opportunity to join a forward-thinking company where I can contribute to meaningful projects, collaborate with experienced professionals, and continue to learn and develop my abilities.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 reveal">
+            <h2 class="text-3xl font-bold mb-12 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
+                    <img src="https://placehold.co/600x400/1a202c/9ca3af?text=Shopping+List+App" alt="Shopping List App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Shopping List App</h3>
+                        <p class="text-gray-400 mb-4">A practical application designed to help users create, manage, and track their shopping lists efficiently.</p>
+                        <a href="https://github.com/QusaiAlasaad/Shopping-list-app" target="_blank" class="text-teal-400 font-semibold hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
+                    <img src="https://placehold.co/600x400/1a202c/9ca3af?text=Expense+Tracker" alt="Expense Tracker" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Expense Tracker</h3>
+                        <p class="text-gray-400 mb-4">An intuitive tool for monitoring personal finances, allowing users to log and categorize their daily expenses.</p>
+                        <a href="https://github.com/QusaiAlasaad/Expense-Tracker" target="_blank" class="text-teal-400 font-semibold hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
+                    <img src="https://placehold.co/600x400/1a202c/9ca3af?text=Meals+App" alt="Meals App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Meals App</h3>
+                        <p class="text-gray-400 mb-4">An application for Browse meal recipes, potentially including features for planning and discovery.</p>
+                        <a href="https://github.com/QusaiAlasaad/Meals" target="_blank" class="text-teal-400 font-semibold hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 reveal">
+            <h2 class="text-3xl font-bold mb-12 text-center">Skills</h2>
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-teal-400">Technical Skills</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">C++</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">C#</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">Java</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">SQL</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">Python</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-teal-400">Professional Skills</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">Problem Solving</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">Clean Code</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">Research Skills</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">Communication</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full">Task Prioritization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 reveal">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+            <div class="max-w-lg mx-auto text-center">
+                <p class="text-gray-300 mb-8">
+                    I'm currently seeking new opportunities. Feel free to reach out to me via email or connect with me on GitHub.
+                </p>
+                <div class="flex flex-col space-y-4">
+                    <a href="mailto:alasaadqusai014@gmail.com" class="inline-block bg-gray-800 hover:bg-gray-700 p-4 rounded-lg transition-colors">
+                        <i class="fas fa-envelope mr-3"></i> alasaadqusai014@gmail.com
+                    </a>
+                    <a href="tel:+962797874452" class="inline-block bg-gray-800 hover:bg-gray-700 p-4 rounded-lg transition-colors">
+                        <i class="fas fa-phone mr-3"></i> +962 79 787 4452
+                    </a>
+                     <a href="https://github.com/QusaiAlasaad" target="_blank" class="inline-block bg-gray-800 hover:bg-gray-700 p-4 rounded-lg transition-colors">
+                        <i class="fab fa-github mr-3"></i> github.com/QusaiAlasaad
+                    </a>
+                    <div class="inline-block bg-gray-800 p-4 rounded-lg">
+                        <i class="fas fa-map-marker-alt mr-3"></i> Amman, Jordan
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 mt-20">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-400">
+            &copy; 2025 Qusai Mohammad Alasaad. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling when clicking navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // JavaScript for revealing elements on scroll
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                // If the element is in the viewport, add the 'active' class
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        // Observe each element with the 'reveal' class
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
